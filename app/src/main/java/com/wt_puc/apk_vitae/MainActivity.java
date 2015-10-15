@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements  Runnable{
 
     @Override
     public void run() {
-        startActivity(new Intent(this, Vitaes.class));
+        startActivity(new Intent(this, VitaesActivity.class));
         finish();
     }
 }
