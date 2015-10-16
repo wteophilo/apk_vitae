@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Apk_Vitae</string>
+    <string name="title_activity_emprego">Emprego</string>
+    <string name="dados_empresa">Dados Empresa</string>
+    <string name="empresa_ocupacao">Ocupação</string>
+    <string name="empresa_nome">Nome:</string>
+    <string name="data_inicio">Data Inicio:</string>
+    <string name="data_final">Data Encerramento:</string>
+    <string name="emprego_atual"> Emprego Atual </string>
+    <string name="bt_salvar">Salvar</string>
 </resources>

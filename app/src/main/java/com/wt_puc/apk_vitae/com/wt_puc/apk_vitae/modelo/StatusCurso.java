@@ -6,5 +6,4 @@ package com.wt_puc.apk_vitae.com.wt_puc.apk_vitae.modelo;
 public enum StatusCurso {
     EMANDAMENTO,
     CONCLUIDO,
-    ENCERRADO;
 }
