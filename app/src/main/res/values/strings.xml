@@ -1,11 +1,31 @@
 <resources>
     <string name="app_name">Apk_Vitae</string>
     <string name="title_activity_emprego">Emprego</string>
-    <string name="dados_empresa">Dados Empresa</string>
+    <string name="dados_empresa">Dados Emprego</string>
     <string name="empresa_ocupacao">Ocupação</string>
     <string name="empresa_nome">Nome:</string>
     <string name="data_inicio">Data Inicio:</string>
     <string name="data_final">Data Encerramento:</string>
     <string name="emprego_atual"> Emprego Atual </string>
     <string name="bt_salvar">Salvar</string>
+    <string name="nome_candidato">Nome: Willian R.S. Teophilo</string>
+    <string name="email_candidato">Email: wteophilo@gmail.com</string>
+    <string name="curso_candidato">Superior em: Arquitetura de Software Distribuido</string>
+    <string name="title_activity_visualizacao_curriculo">Curriculo</string>
+    <string name="academica">Formação Acadêmica</string>
+    <string name="profissional">Formação Profissional</string>
+    <string name="titulo_graduacao">Gradução:</string>
+    <string name="txtGraducao">Engenharia da Computação - Univerdade Braz Cubas - 2013</string>
+    <string name="titulo_pos">Pós Graduação:</string>
+    <string name="txt_pos">Arquitetura de Software Distríbuido: PUC Minas - 2016</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_formacao_profissional">FormacaoProfissionalActivity</string>
+    <string name="linguagem_conhecimento">Conhecimento:</string>
+    <string name="txtConhecimento">Java,Ruby,VB6, MySQL</string>
+    <string name="tituloEmprego1">Digital Software Ltda - Programador Jr - 01/01/2013 - Emprego atual</string>
+    <string name="tituloEmprego2">Digital Software Ltda - Estagiário - 10/07/2012 - 31/12/2012</string>
+    <string name="tituloEmprego3">Compsis Ltda - Estagiário - 15/03/2011 - 10/06/2012</string>
+    <string name="experiencia">Experiência no Mercado</string>
+    <string name="contato">Entre em contato via LinkedIn</string>
+
 </resources>

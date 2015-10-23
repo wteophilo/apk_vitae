@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_formacao_profissional"
+        tools:context="com.wt_puc.apk_vitae.FormacaoProfissionalActivity"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/imagem_largura"
+            android:layout_height="@dimen/imagem_largura"
+            android:id="@+id/imageView2"
+            android:src="@drawable/foto"
+            android:maxHeight="128dp"
+            android:maxWidth="128dp"
+            android:nestedScrollingEnabled="false"
+            style="@style/espacoLinear" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_candidato"
+                android:id="@+id/txtNome" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/espacoLinear">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linguagem_conhecimento"
+                    android:id="@+id/tituloConhecimento"
+                    style="@style/titulos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtConhecimento"
+                    android:id="@+id/txtConhecimento" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/experiencia"
+                android:paddingTop="5dp"
+                android:id="@+id/txtExp"
+                style="@style/titulos" />
+
+            <View
+                android:id = "@+id/line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/espacoLinear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloEmprego2"
+                android:id="@+id/tituloEmprego2"
+                style="@style/titulos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/espacoLinear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloEmprego3"
+                android:id="@+id/tituloEmprego3"
+                android:phoneNumber="false"
+                style="@style/titulos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/espacoLinear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloEmprego1"
+                android:id="@+id/tituloEmprego1"
+                style="@style/titulos" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
