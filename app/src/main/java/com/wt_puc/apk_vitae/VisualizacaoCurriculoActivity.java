@@ -40,7 +40,7 @@ public class VisualizacaoCurriculoActivity extends AppCompatActivity {
 
         btContato.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://br.linkedin.com/pub/willian-teophilo");
+                Uri uri = Uri.parse("https://br.linkedin.com/pub/willian-teophilo/37/a19/677");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
