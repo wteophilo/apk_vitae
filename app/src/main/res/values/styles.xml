@@ -18,10 +18,21 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="telaInicial">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
 
     <style name="espacoLinear">
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="espacoETitulo">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>

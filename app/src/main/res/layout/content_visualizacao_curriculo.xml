@@ -25,25 +25,65 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        style="@style/espacoLinear">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/nome_candidato"
-            android:id="@+id/txtNome" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/email_candidato"
-            android:id="@+id/txtEmail" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome"
+                android:id="@+id/tituloNome"
+                style="@style/titulos" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/curso_candidato"
-            android:id="@+id/txtCursoSuperior" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_candidato"
+                android:id="@+id/txtNome" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:id="@+id/tituloEmail"
+                style="@style/titulos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_candidato"
+                android:id="@+id/txtEmail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tituloCurso"
+                android:id="@+id/tituloCursoSuperior"
+                style="@style/titulos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ultimoSuperior"
+                android:id="@+id/txtCursoSuperio" />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -79,6 +119,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/contato"
                 android:id="@+id/btContato" />
+
         </LinearLayout>
 
     </LinearLayout>

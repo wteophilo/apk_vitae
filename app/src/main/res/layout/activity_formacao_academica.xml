@@ -23,11 +23,25 @@
         android:layout_height="wrap_content"
         style="@style/espacoLinear">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/nome_candidato"
-            android:id="@+id/txtNome" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome"
+                android:id="@+id/tituloNome"
+                style="@style/titulos" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_candidato"
+                android:id="@+id/txtNome" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -35,7 +49,7 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/espacoLinear">
+        style="@style/espacoETitulo">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -46,7 +60,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/titulo_graduacao"
-                android:id="@+id/tituloGraducao" />
+                android:id="@+id/tituloGraducao"
+                style="@style/titulos" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -73,7 +88,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/titulo_pos"
-                android:id="@+id/tituloPos" />
+                android:id="@+id/tituloPos"
+                style="@style/titulos" />
 
             <TextView
                 android:layout_width="wrap_content"

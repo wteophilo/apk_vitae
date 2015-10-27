@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Apk_Vitae</string>
     <string name="title_activity_emprego">Emprego</string>
+
+    <string name="nome">Nome: </string>
+    <string name="email">Email: </string>
+
     <string name="dados_empresa">Dados Emprego</string>
     <string name="empresa_ocupacao">Ocupação</string>
     <string name="empresa_nome">Nome:</string>
@@ -8,13 +12,17 @@
     <string name="data_final">Data Encerramento:</string>
     <string name="emprego_atual"> Emprego Atual </string>
     <string name="bt_salvar">Salvar</string>
-    <string name="nome_candidato">Nome: Willian R.S. Teophilo</string>
-    <string name="email_candidato">Email: wteophilo@gmail.com</string>
-    <string name="curso_candidato">Superior em: Arquitetura de Software Distribuido</string>
+
+    <string name="nome_candidato">Willian R.S. Teophilo</string>
+    <string name="email_candidato">wteophilo@gmail.com</string>
+    <string name="ultimoSuperior"> Arquitetura de Software Distribuido</string>
+
+    <string name="tituloCurso">Superior em:</string>
     <string name="title_activity_visualizacao_curriculo">Curriculo</string>
     <string name="academica">Formação Acadêmica</string>
     <string name="profissional">Formação Profissional</string>
     <string name="titulo_graduacao">Gradução:</string>
+
     <string name="txtGraducao">Engenharia da Computação - Univerdade Braz Cubas - 2013</string>
     <string name="titulo_pos">Pós Graduação:</string>
     <string name="txt_pos">Arquitetura de Software Distríbuido: PUC Minas - 2016</string>

@@ -26,12 +26,12 @@ public class UsuarioDAO {
         valores.put("nome",usuario.getNome());
         valores.put("email", usuario.getEmail());
 
-        db.update("usuario",valores,"[id = ?", new String[]{""+usuario.getId()});
+        db.update("usuario",valores,"[_id = ?", new String[]{""+usuario.getId()});
     }
 
     public List<Usuario> buscar(){
         List<Usuario> usuarios = new ArrayList<Usuario>();
-        String[] colunas = new String[]{"id","nome","email"};
+        String[] colunas = new String[]{"_id","nome","email"};
         Cursor cursor  = db.query("usuario",colunas,null,null,null,null,"nome asc");
         if (cursor.getCount()>0){
             cursor.moveToFirst();
@@ -40,6 +40,7 @@ public class UsuarioDAO {
                 usuario.setId(cursor.getInt(0));
                 usuario.setNome(cursor.getString(1));
                 usuario.setEmail(cursor.getString(2));
+                usuarios.add(usuario);
             }while(cursor.moveToNext());
         }
         return usuarios;

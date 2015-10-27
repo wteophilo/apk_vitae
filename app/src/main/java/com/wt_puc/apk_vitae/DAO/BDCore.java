@@ -22,40 +22,43 @@ public class BDCore extends SQLiteOpenHelper {
     }
 
     private void preenchendoTabela(SQLiteDatabase db) {
-        db.execSQL("insert into usuario values (null,'Willian R.S.Teophilo','wteophilo@gmail.com'");
+        db.execSQL("insert into usuario values (null,'Willian R.S.Teophilo','wteophilo@gmail.com');");
         //Formação Academica
         db.execSQL("insert into formacaoAcademica values (null,'Graduação','Engenharia da Computação','Universidade Braz Cubas'," +
-                "2013");
-        db.execSQL("insert into formacaoAcademica values (null,'Pós Graduação','Arquitetura de Software Distribuído','PUC Minas'" +
-                "2016");
+                "2013,1);");
+        db.execSQL("insert into formacaoAcademica values (null,'Pós Graduação','Arquitetura de Software Distribuído','PUC Minas'," +
+                "2016,1);");
 
         //Formação Professional
         db.execSQL("insert into formacaoProfissional values (null,'Digital Software Ltda','Programador Jr'," +
-                "'01/01/2013','Atualmente'");
+                "'01/01/2013','Atualmente',1);");
         db.execSQL("insert into formacaoProfissional values (null,'Digital Software Ltda','Estagiário'," +
-                "'10/07/2012','31/12/2012'");
+                "'10/07/2012','31/12/2012',1);");
         db.execSQL("insert into formacaoProfissional values (null,'Compsis Ltda','Estagiário'," +
-                "'15/03/2011','10/06/2012'");
+                "'15/03/2011','10/06/2012',1);");
     }
 
     private void criandoTabelas(SQLiteDatabase db) {
-        db.execSQL("create table usuario(id_usuario integer primary key autoincrement, nome text not null," +
+        db.execSQL("create table usuario(_id integer primary key autoincrement, nome text not null," +
                 "email text not null);");
 
-        db.execSQL("create table formacaoAcademica(id_academica integer primary key autoincrement," +
+        db.execSQL("create table formacaoAcademica(_id integer primary key autoincrement," +
                 "tipoGraducao text not null, nomeCurso text not null,instituicao text not null, " +
                 "anoConclusao integer not null," +
                 "id_usuario integer not null, " +
                 "FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario));");
 
-        db.execSQL("create table formacaoProfissional(id_profissional integer primary key autoincrement," +
+        db.execSQL("create table formacaoProfissional(_id integer primary key autoincrement," +
                 "empresa text not null, cargo text not null, dataEntrada text not null, dataSaida text not null," +
                 "id_usuario integer not null, " +
-                "FOREIGN KEY(id_usuario) REFERENCES usuario(id_usuario));");
+                "FOREIGN KEY(id_usuario) REFERENCES usuario(_id));");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("drop table usuario;");
+        db.execSQL("drop table formacaoAcademica;");
+        db.execSQL("drop table formacaoProfissional;");
+        onCreate(db);
     }
 }
